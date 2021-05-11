@@ -1,0 +1,46 @@
+/* table of content
+ 1.thanks
+ 2.terms */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* 1.thanks */
+.thanks {
+  background: #f4f6f1;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.thanks h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+}
+.thanks p {
+  font-size: 18px;
+  color: #8c8c8c;
+  margin-top: 1rem;
+}
+
+/* 2.terms */
+
+.terms {
+  background: #f4f6f1;
+  padding: 150px 0 30px 50px;
+}
+.terms > h1 {
+  color: #000;
+}
+.terms > p {
+  color: #8c8c8c;
+  margin-top: 20px;
+}
+.terms > a {
+  text-decoration: none;
+  background: #73b925;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 40px;
+  line-height: 5rem;
+  text-transform: uppercase;
+}

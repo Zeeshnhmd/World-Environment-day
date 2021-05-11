@@ -1,0 +1,350 @@
+/* <!-- Table of content
+    1.slider
+    2.header
+    3.challenge
+    4.certificate
+    5.volunteers
+    6.Newsletter
+    7.footer 
+    8.Responsive
+     */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 1. slider */
+
+.load {
+  animation: slide 2s;
+}
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 30s infinite;
+}
+.content {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.principle {
+  left: 20%;
+  top: 35%;
+  right: 20%;
+  position: absolute;
+  text-align: center;
+}
+.principle h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.principle p {
+  font-size: 20px;
+}
+.principle a {
+  text-decoration: none;
+  background: #73b925;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 40px;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+@keyframes slide {
+  0% {
+    background-image: url(images/bg_1.jpg);
+  }
+  20% {
+    background-image: url(images/bg_1.jpg);
+  }
+  20.01% {
+    background-image: url(images/bg_2.jpg);
+  }
+  40% {
+    background-image: url(images/bg_2.jpg);
+  }
+  40.01% {
+    background-image: url(images/bg_4.jpg);
+  }
+  60% {
+    background-image: url(images/bg_4.jpg);
+  }
+  60.01% {
+    background-image: url(images/bg_1.jpg);
+  }
+  80% {
+    background-image: url(images/bg_1.jpg);
+  }
+  80.01% {
+    background-image: url(images/bg_2.jpg);
+  }
+  100% {
+    background-image: url(images/bg_2.jpg);
+  }
+}
+
+/* 2. header */
+
+.head {
+  height: 18vh;
+  background: #1c1c1c;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 24px;
+}
+.head > .head-1 > h1 {
+  position: relative;
+  font-weight: 700;
+  color: #73b925;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.6s;
+}
+.head > .head-1 > span {
+  color: #73b925;
+  font-size: 12px;
+}
+.head > .head-1 > span > span {
+  color: #fff;
+  font-size: 12px;
+}
+
+/*3. challenge */
+
+.challenge {
+  background: #f4f6f1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 50px 50px 30px 50px;
+}
+
+.challenge .chall-2 > h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+}
+.challenge .chall-2 > p {
+  font-size: 18px;
+  color: #8c8c8c;
+}
+.challenge .chall-2 > a {
+  text-decoration: none;
+  background: #73b925;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 40px;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+/* 4. certificate */
+
+.certificate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 50px 50px 30px 50px;
+  background-color: #73b925;
+}
+.certificate .cert-1 > h1 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 5rem;
+}
+.certificate .cert-1 > p {
+  font-size: 18px;
+  color: #fff;
+}
+.certificate .cert-1 > a {
+  text-decoration: none;
+  background: #fff;
+  color: #73b925;
+  border-radius: 4px;
+  padding: 10px 40px;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+.certificate .cert-2 > p {
+  margin-left: 100px;
+  line-height: 3rem;
+  color: #fff;
+}
+
+/* 5. volunteers */
+
+.volunteers {
+  height: 100vh;
+  margin-top: 60px;
+  text-align: center;
+}
+.volunteers .volun > span {
+  color: #73b925;
+  font-size: 13px;
+  font-weight: 600;
+}
+.volunteers .volun > h3 {
+  color: #000;
+  font-size: 40px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  grid-gap: 2rem;
+}
+.card {
+  background-color: #73b925;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.container {
+  position: unset;
+}
+.container > img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.details {
+  padding: 20px 10px;
+}
+.details > h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details > p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+/* 6. newsletter */
+
+.newsletter {
+  height: 30vh;
+  background: #73b925;
+  padding: 50px 0 30px 50px;
+  text-align: center;
+}
+.newsletter span {
+  color: #fff;
+  font-weight: 400;
+}
+.newsletter h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.newsletter a {
+  background: #fff;
+  color: #73b925;
+  padding: 10px 40px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.newsletter > i {
+  background: #73b925;
+}
+
+/* 7. footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-size: cover;
+  background: #000;
+  padding-top: 50px;
+  grid-gap: 3rem;
+}
+.footer .text {
+  padding: 30px;
+}
+.footer .text > span > span {
+  color: #73b925;
+  font-size: 25px;
+}
+.footer .text > span {
+  display: block;
+  color: #999;
+  font-size: 10px;
+}
+.footer p {
+  color: #999;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: #999;
+  border-bottom: 1px solid #73b925;
+}
+.footer a:hover {
+  background: #73b925;
+  color: #fff;
+}
+
+/* 8. responsive */
+
+@media (max-width: 955px) {
+  .slider .content .principle h1 {
+    font-size: 50px;
+  }
+  .volunteers {
+    grid-template-columns: repeat(2, 1fr);
+    height: 170vh;
+  }
+  .head {
+    grid-template-columns: 1fr;
+  }
+  .challenge {
+    grid-template-columns: 1fr;
+  }
+  .certificate {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .head > .head-1 > h1 {
+    font-size: 20px;
+  }
+  .slider .content .principle h1 {
+    font-size: 40px;
+  }
+  .slider .content .principle p {
+    font-size: 15px;
+  }
+  .challenge .chall-2 > h1 {
+    font-size: 30px;
+  }
+  .challenge .chall-2 > p {
+    font-size: 15px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
